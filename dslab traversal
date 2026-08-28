@@ -1,0 +1,16 @@
+void traverse(struct Node *head)
+{
+    struct Node *current = head;
+
+    while (current != NULL)
+    {
+        printf("%d ", current->data);
+        current = current->next;
+    }
+}
+
+struct Node *newnode = malloc(sizeof(struct Node));
+
+newnode->data = x;
+newnode->next = head;
+head = newnode;
